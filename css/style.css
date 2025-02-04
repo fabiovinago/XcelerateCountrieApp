@@ -1,0 +1,189 @@
+
+/*Fonts*/
+@font-face {
+    font-family: poppingsregular;
+    src: url("../fonts/Poppins-Regular.ttf");
+}
+@font-face {
+    font-family: poppinsbold;
+    src: url("../fonts/Poppins-Bold.ttf");
+}
+/*Font styles*/
+body{
+    font-family: poppingsregular;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow-x: hidden;
+}
+h1{
+    font-family: poppinsbold;
+    font-size: 32px;
+}
+h2{
+    font-family: poppinsbold;
+    font-size: 24px;
+}
+h3{
+    font-family: poppinsbold;
+    font-size: 18px;
+}
+/*Buttons*/
+.btn-primary{
+    background-color: #0030aa;
+    color: white;
+    border-style: none;
+    padding: 12px 24px 12px 24px;
+    transition: all 0.3s ease;
+}
+.btn-primary:hover {
+    background-color: rgb(1, 28, 89);
+    transform: scale(1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/*Custom links nav margin*/
+.custom-links-nav{
+    font-weight: bold;
+    margin-top: 100px;
+    padding-bottom: 20px;
+    font-size: 14px;
+}
+/*Standaardstijl voor de menu-links*/
+.menu-link {
+    text-decoration: none;
+    color: rgb(1, 28, 89);
+    padding: 5px 10px;
+    background-color: transparent;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+/*Hover-effect voor de menu-links*/
+.menu-link:hover {
+    background-color: rgb(1, 28, 89);
+    color: white;
+    transform: scale(1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/*Header img*/
+.bg-header {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)) ,
+    url("../img/countrie-map.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+/*Custom margin header*/
+.header-margin{
+    margin: 70px;
+}
+/*Custom margin zoekbalk en filter*/
+.input-margin{
+    margin-top: 100px;
+}
+.margin-title{
+    margin: 100px 0 100px 0;
+}
+/*Letter spacing*/
+.text-spacing{
+    letter-spacing: 5px;
+}
+.card-image{
+    height: 200px !important;
+}
+/*CSS animatie voor tekst*/
+.text-focus-in {
+    -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+@-webkit-keyframes text-focus-in {
+    0% {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+@keyframes text-focus-in {
+    0% {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+/*CSS animatie voor header bg*/
+.kenburns-top {
+    -webkit-animation: kenburns-top 20s ease-out both;
+    animation: kenburns-top 20s ease-out both;
+}
+@-webkit-keyframes kenburns-top {
+    0% {
+        -webkit-transform: scale(1) translateY(0);
+        transform: scale(1) translateY(0);
+        -webkit-transform-origin: 50% 16%;
+        transform-origin: 50% 16%;
+    }
+    100% {
+        -webkit-transform: scale(1.25) translateY(-15px);
+        transform: scale(1.25) translateY(-15px);
+        -webkit-transform-origin: top;
+        transform-origin: top;
+    }
+}
+@keyframes kenburns-top {
+    0% {
+        -webkit-transform: scale(1) translateY(0);
+        transform: scale(1) translateY(0);
+        -webkit-transform-origin: 50% 16%;
+        transform-origin: 50% 16%;
+    }
+    100% {
+        -webkit-transform: scale(1.25) translateY(-15px);
+        transform: scale(1.25) translateY(-15px);
+        -webkit-transform-origin: top;
+        transform-origin: top;
+    }
+}
+/*CSS animatie voor kaartjes*/
+.scale-up-center {
+    -webkit-animation: scale-up-center 0.9s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: scale-up-center 0.9s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+@-webkit-keyframes scale-up-center {
+    0% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+@keyframes scale-up-center {
+    0% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+/*Footer text*/
+.footer-text{
+    background: #1e1d1d;
+    color: rgba(255, 255, 255, 0.76);
+    font-size: 12px;
+    padding: 50px 0px 50px 0px;
+    margin-top: 100px;
+}
